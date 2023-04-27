@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    transition: all 0.5s ease;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.menu ul li:hover{
+    transform: scale(1.1);
+    color: #3a3a3a;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paymentContaier{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.billingAdress {
+    padding-right: 20px;
+}
+
+.payment,
+.billingAdress
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+.cards{
+    width: 100%;
+    height: 75px;
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+i {
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.checkbox {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+#checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.checkButton {
+    width: 40%;
+    height: 50px;
+    background-color: #4f4f4f;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.checkButton:hover {
+    background-color: #000;
+}
+
+.invalid {
+
+    border: 1px solid red;
+  }
+  
+  .valid {
+    border: 1px solid green;
+  }
+  
+  .cardNumber{
+    padding-left: 40px;
+    background-image: url('https://img.icons8.com/ios/50/000000/credit-card-front-side.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+
+  .type {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .inputFile {
+    border: none;
+    width: 350px;
+    height: 30px;
+    color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+
+  }
+
+    nav {
+        background-color: #333;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+        height: 50px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        background-color: #111;
+    }
+
+    .icons {
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        color: #fff;
+    }
+
+    img {
+        width: 200px;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .containerElement {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 5 10%;
+    }
+    
+    .element {
+        width: 300px;
+        height: 400px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .purchaseButton {
+        width: 70%;
+        height: 30px;
+        background-color: #4f4f4f;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+        transition: all 0.5s ease;
+    }
+
+    .purchaseButton:hover {
+        background-color: #000;
+    }
+
+    .info{  
+        width: 80%;
+        padding: 10px;
+    }
+
+    .inf {
+        width: 200px;
+        height: 70px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .billingAdress::before {
+        content: "";
+        width: 30px;
+        height: 0px;
+        background-image: url('https://img.icons8.com/ios/50/000000/delete-sign.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        cursor: pointer;
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 125px;
+        right: 200px;
+        cursor: pointer;
+    }
+
+    .delete,
+    .add {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .delete,
+    .add {
+        color: #fff;
+        background-color: #4f4f4f ;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s ease   ;
+    }
+
+    .delete:hover,
+    .add:hover {
+        background-color: #000;
+    }
+
+    .buttons {
+        width: 90%;
+        padding: 10px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .productsCount:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: #a9a9a9;
+        border-radius: 50%;
+        z-index: 1;
+        position: absolute;
+        top: 8px;
+        right: 220px;
+    }
+
+    .cartElementsContainer {
+        left: 950px;
+        top: 46px;
+        width: 500px;
+        height: 450px;
+        position: absolute;
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 15px;
+        color: white;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.5s all ease;
+    }
+
+    .iconCart {
+        height: 100%;
+        width: 20px;
+        align-items: center;
+        display: flex;
+    }
+
+
+    .head {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .deleteCartElements {
+        width: 90px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #4f4f4f;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .deleteCartElements:hover {
+        background-color: black;
+    }
+
+    .cartElements {
+        width: 100%;
+        height: 350px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        padding-right: 2px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        
+      }
+
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #4f4f4f;
+        border-radius: 10px;
+      }
+
+    .cartElement {
+        width: 100%;
+        height: 100px;
+        background-color: #4f4f4f;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    
+    .cartElImg {
+        width: 100px;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .cartElInfo {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .top,
+    .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 30px;
+    }
+
+    .add-dellElement {
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between ;
+    }
+
+    .dellEl,
+    .addEl {
+       cursor: pointer;
+       background-color: #4f4f4f;
+       outline: none;
+       border: none;
+       color: white;
+    }
+
+    .cartFooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .cartImg {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    .active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .deleteElCart {
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+    }

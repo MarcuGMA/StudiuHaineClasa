@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="for.html">More</a></li>
+            <li><a href="table.html">Contacts</a></li>
+        </ul>
+        <div class="icons">
+                <div class="iconCart">
+                    <i class="fas fa-shopping-cart cart" id="cart"  style="color: #ffffff;"></i>
+                </div>
+                <div class="cartElementsContainer">
+                        <div class="head">
+                            <p>Coș</p>
+                            <button class="deleteCartElements">Sterge</button>
+                        </div>
+                        <div class="cartElements">
+                            <!-- <div class="cartElement">
+                                <div class="cartElImg">
+                                    <img class="cartImg" src="https://pumamoldova.md/images/products/jpg/52325601875x875.jpg?v10.78" alt="">
+                                </div>
+                                <div class="cartElInfo">
+                                    <div class="top">
+                                        <div class="infoEl">Tricou XS Alb</div>
+                                        <div class="deleteElCart">x</div>
+                                    </div>
+                                    <div class="bottom">
+                                    <div class="priceElCart">200</div>
+                                        <div class="add-dellElement">
+                                            <div class="dellEl">-</div>
+                                            <div class="elementCount">2</div>
+                                            <div class="addEl">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="cartFooter">
+                            <p>Suma:</p><p class="cartSum">2000</p><p>lei</p>
+                        </div>
+                </div>   
+           <i class="fas light fa-plus" id="add" style="color: #ffffff;"></i>
+        </div>
+    </nav>
+    <div class="container">
+            <div class="paymentContaier">
+                <div class="billingAdress">
+                  <img class="close" src="https://img.icons8.com/ios/50/000000/delete-sign.png" alt="">
+                    <h3>Adauga element</h3>
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Tricou">
+                    </form>
+                    <form action="">
+                        <label for="adress">Pret</label>
+                        <input type="text" name="adress" id="price" placeholder="1000">
+                    </form>
+                    <form action="">
+                        <label for="city">Culoare</label>
+                        <input type="text" name="city" id="color" placeholder="Negru">
+                    </form>
+                    <form action="">
+                        <label for="state">Marime</label>
+                        <input type="text" name="state" id="size" placeholder="XS">
+                    </form>
+                    <form action="">
+                        <div class="cards">
+                            <label for="inputFile" class="fileButton">Image link</label>
+                            <input type="text" id="inputFile">
+                        </div>
+                    </form>
+                    <form action="">
+                        <label for="zip">Gen</label>
+                        <select name="" id="gen">
+                            <option value="barbati">Masculin</option>
+                            <option value="femei">Femenin</option>
+                            <option value="unisex">Unisex</option>
+                        </select>
+                    </form>  
+                </div>
+            </div>
+            <a href="index.html"><button class="checkButton">Adauga Element</button></a>
+    </div>
+    <div class="containerElement">
+        <div class="element">
+            <div class="image">
+                <img src="https://pumamoldova.md/images/products/jpg/52325601875x875.jpg?v10.78" alt="">
+            </div>
+            <div class="info">
+                <h3>Tricou</h3>
+                <div class="inf">
+                    <p >Pret: <span class="price">100</span> lei</p>
+                        <p>Culoare: <span class="color">Negru</span></p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="purchaseButton">Cumpara</button>
+                <div class="delete">
+                    <i class="fas fa-light fa-trash"></i>            
+                </div>    
+                <div class="add">
+                    <i class="fas fa-solid fa-plus"></i>
+                </div>
+            </div>
+        </div>
+        
+    </div>  
+    <script src="https://kit.fontawesome.com/e755cd0b88.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
